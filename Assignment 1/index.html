@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+
+<div class="center">
+<h1>Assignment 1</h1>
+
+<style>
+.center {
+  text-align: center;
+}
+</style>
+<style>
+img {
+  display: inline-block;
+  margin: 25px 10px; /* Change this to fit all images */
+}
+</style>
+
+
+
+<h3><u>About me</u></h3>
+<body>
+<p>I was born on November 23rd 2003 in Chicago, America to my Nepali parents who through the help of my Grandfather decided to name me Prerak which in Nepali means to inspire others. Whilst growing up I was taught the Nepali language and the traditions and cultures that my family and nation held. My most recent school was The Knox School located in Wantirna South where I hold many joyous and fond memories of my schooling experience. Whilst attending the school I played the Tenor Saxophone in the schools Jazz and concert band. I also played soccer for 11 years and only recently stopped to pick up Brazilian Jiu Jitsu or BJJ for short at Immersion MMA at Glen Waverley
+</body>
+
+<img src="/images/pico2.PNG" alt="Driving in a mini" style="width:140px;height:140px;">
+
+
+
+<h3><u>Future ideas</u></h3>
+<body>
+<img src="/images/pico6.png" alt="Security architect" style="width:140px;height:140px;">
+
+<p style="color:grey">A description (in your own words) of the position, and particularly what makes this position appealing to you.
+<p>A security architects’ role is to manage the building and maintenance of an organisation’s technological security in general whether it’s taking up a risk advisory role, ethical hacking or pen-testing. This is a role I am currently interested in pursuing due to its wide variety of different security tasks to complete instead of focusing upon a singular and specific role whilst also being able to socialise and work closely within a group and working with new clients often allowing me to meet new people
+<p style="color:grey">A description (in your own words) of the skills, qualifications and experience required for the position.
+<p>A security architect Is a role that requires comprehensive knowledge of a broad spectrum of skills that are in cybersecurity such as knowing current threats and how to prevent them, experience in pen-testing, experience in ethical hacking and experience in building security architecture in smaller projects. Security architects must also be able to work well with groups and be able to perform analysis on the current security systems of organisations and presenting findings to others in an easy-to-understand manner. Additionally, knowledge of coding is a must have in the field.
+<p style="color:grey">A description (in your own words) of the skills, qualifications and experience you currently have.
+<p>Currently the skills and experiences I hold that attribute to the progression of achieving my goals come from my VCE Software Development subject which have given me some basic understanding of the threats posed to organisations (such as MITM attacks) and ways to prevent malicious attackers which is a key skill needed for a security architect. I regularly work in groups and have had previous experience being in a leadership position in both sports and school.
+<p style="color:grey">A plan describing how you will obtain the skills, qualifications and experience required for the position,building on those you have now. This need not be greatly detailed, (and will probably change significantly over time anyway), but try to be as specific as you can
+<p>My plan to become a security architect Is to first complete my degree in IT and major in cybersecurity, additionally I intend to undertake certifications in my 3rd year of my degree such as Network + and Security +. I also hope to get an Internship with Deloitte in either their Cyber-risk advisory or security consulting. Once completing my internship, I hope to work within the company in the respective division I interned in. Whilst working and garnering experience I intend to further my education by pursuing a CISSP certification and possibly a masters in cybersecurity. This process will obviously take some time and require a lot of time and effort, but hopefully will all be enough to become a security architect and then eventually hopefully start my own security firm.
+</body>
+
+<h3><u>Project Lock and Key</u></h3>
+<p>	The idea of the project Is to create a basic encryption and decryption program with python for messages being sent over a simple LAN connection between two machines in order to prevent malicious attacks such as MITM attacks or sniffer attacks both of which hijack your messages being sent and either alter them (MITM) or view them (Sniffer attack) without your knowledge or consent and thus through the encryption and decryption program offer basic protection.
+<p>	In the modern day and age, the easiest and most popular way to communicate is using technology and programs such as iMessage or snapchat and so people who have malicious intent create programs to steal and hijack messages sent over unsecured networks with 35% of exploitations being a direct result of a MITM attack as stated by IBM’s X-force Threat intelligence Index 2018. So, my reasoning for choosing this idea for my project is to not only demonstrate the importance of encryption in the modern age but to also learn and practise how to set up a basic encryption and decryption program in hopes it will aid in my theoretical and practical knowledge of cybersecurity in hopes it will aid achieving my future goals
+<P>	My project requires setting up a simple chat between two machines over a LAN network that is not encrypted and then program a simple ‘sniffer’ attack that will be able to display the messages that are being sent and received by the two machines. A sniffer attack is where the theft and interception of data occurs with the malicious attacker using a packet sniffer which is a program (I will create myself) hijacking the message and displaying it in plaintext to the malicious attacker.
+<p>Additionally, a program that is able to read the networks packets such as Wireshark will be used to perform the sniffer attack if for whatever reason the self-made sniffer program is either insufficient or unable to hijack the message . subsequently, I will then create an encryption and decryption program that follows the idea of private key encryption where the key used to encrypt the message being sent is also the key that will decrypt the message, basically meaning the same algorithm is encrypting the message and decrypting the message. Through this process the messages will be safely encrypted and so instead of the software now displaying the messages in an understandable and clear way the messages sent will now be encrypted and thus will be unable to be read by the malicious attacker unless they are able to acquire the key used to encrypt the message as due to the nature of private key encryption the same key was also used to decrypt the message allowing the malicious attacker to view the message.
+<p>However, a solution to the issue is rather than creating a private key algorithm that will use the same key I will have to create a public key algorithm which would prove to be more difficult to wright with my current programming knowledge but if my ability does improve by the time assignment 3 is undertaken then with the public key encryption the LAN messages sent between the two machines will become near impossible to decrypt. A public key encryption is near impossible to decrypt due to the fact that two keys are used to separately encrypt and decrypt the message. The key used to encrypt the message is left publicly available whilst the key that is used to decrypt the algorithm is privately held and is a secret thus making the attacker unable to view the message without the both the algorithm and the private key used to decode the encryption. The project is not commercially viable with the current blueprint but could be developed further once I have garnered a comprehensive knowledge of programming, Network security and other complex knowledge of cybersecurity concepts that apply to the cryptography.
+<p>In order to usefully undertake and complete the project with maximum efficiency two machines will be required in order to send the messages over the LAN connection, the two machines can either be two home computers which is available to me or with two raspberry PI’s if the two home machines are unavailable for any reason when undertaking the project. Additionally, Python 3 will be required in order to code the LAN network, chat messages, sniffer attack and either the symmetrical encryption algorithm or the asymmetrical encryption algorithm. Additionally the program WireShark will also be required as a reassurance for the sniffer attack.
+<p>The Hardware required to undertake the project is already available with a backup in place (in the form of raspberry pi) in-case of an emergency. The skills required to write the many skills is currently at a basic level but the necessary skills and programming knowledge required to create a LAN connection, basic sniffer attack and a basic symmetric encryption is available and obtainable through the internet however the programming skills needed for an asymmetrical encryption will be more difficult to obtain due to the complexity of the task and the time constraints
+<p>If the project is successfully achieved with the encryption working in preventing the sniffer attack from understanding the message, then the problem of the MITM/sniffer attack will be solved allowing myself to have learnt the necessary fundamental knowledge in creating preventative measures from sniffer attacks further adding key skills needed to reach my career aspirations
+
+<h3><u>Personal Profile</u></h3>
+<img src="/images/pico3.png" alt="entrepreneur personality" style="width:140px;height:140px;">
+<img src="/images/pico6.png" alt="Learning style" style="width:140px;height:140px;">
+<font size="+2"> 623ff18127c7bd0009d509e3</font>
+<a href="https://bigfive-test.com/result/623ff18127c7bd0009d509e3">Test 3(use code to view test results and click this link)</a						<body>
+<p>
+<p style="color:grey">What do the results of these tests mean for you?
+<p>The results in particular test 2 and 3 help me to understand what type of person I am given the specific questions that I answered. Test 2 shows me that I more of a visual learner and would thus benefit in a study style that accommodates such learning. Furthermore test 3 displays specific character details of myself such as my ‘cheerfulness’ or my ‘gregariousness’  and shows areas of my character that I could possibly change to become a better version of myself.
+<p style="color:grey">How do you think these results may influence your behaviour in a team?
+<p>All 3 tests demonstrate a general level of outgoingness and extraversion which would mean I would be outgoing and sociable within the group and would have regular conversations with groupmates whether it would be about the project or any other topic that piques interest. The 1st test also states that I am spontaneous in nature.
+<p style="color:grey">How should you take this into account when forming a team?
+<p>When considering who should be in a group with me when looking at the test then it would be logical to have a group with people who similarly are highly outgoing and sociable as more ideas and discussions within the group can be explored without someone being left out as pairing a group full of more outgoing people will mean that regular conversation would be held thus ideas will be able to flow between every group member
+
+<h3><u>Interest in IT</u></h3>
+<body>
+<p style="color:grey">What is your interest in IT? When did your interest in IT start? Was there a particular event or person that sparked your interest? Outline your IT experience (if any).
+<p>My specific interest in IT is currently in Cybersecurity and how to make the future technological world a more safer place to traverse and in particular more so in banking transactions. My interest within the IT field sprung from taking software development for my VCE subject, I found the topics and programming to be enjoyable and interesting especially when discussing threats and ways to protect from possible threats. Through my VCE subject I was able to learn the 		 	 fundamental ideas of some IT concepts and programming concepts, additionally the subject also taught me how to use Visual Basic
+<p style="color:grey">Why did you choose to come to RMIT?
+<p>I chose RMIT for it’s practical application of ideas rather than relying heavily on theoretical studies RMIT offers hands on experience in topics that I find interesting especially within STEM. I also chose RMIT for its location within the city, although it does take some time to get to campus I find the city and the campus a fun place to learn and explore
+<p style="color:grey">What do you expect to learn during your studies?
+<p>I expect to learn key concepts of IT and programming that are pivotal in having a successful career and future after I finish my studies and in particular I hope to study Cybersecurity and ways to protect peoples Data and privacy from malicous intent
+</body>
+
+
+</body>
+</div>
+</html>
